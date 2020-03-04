@@ -58,7 +58,7 @@ RUN curl -sSL https://rvm.io/mpapis.asc | gpg --import - \
         && rvm install 2.5 \
         && rvm install 2.6 \
         && rvm use 2.6 --default \
-        && rvm rubygems current \
+        && rvm rubygems 2.7.10 \
         && gem install bundler --no-document \
         && gem install solargraph --no-document" \
     && echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*' >> /home/gitpod/.bashrc.d/70-ruby
